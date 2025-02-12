@@ -10,4 +10,8 @@ class EventPolicy < ApplicationPolicy
       scope.all
     end
   end
+
+  def owned_events?
+    user.present?
+  end
 end

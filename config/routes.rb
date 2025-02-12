@@ -20,5 +20,9 @@ Rails.application.routes.draw do
 
   get "/authentication/line_callback", to: "authentication#line_callback"
 
-  resources :dashboard, only: [:index]
+  resources :dashboard, only: [:index] do
+    collection do
+      get :owned_events
+    end
+  end
 end

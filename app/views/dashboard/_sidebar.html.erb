@@ -1,0 +1,18 @@
+<!-- Sidebar Trigger Button -->
+<button class="btn btn-sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+  <i class="fa-solid fa-chevron-right sidebar-icon-size-med"></i>
+</button>
+
+<!-- Sidebar -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Sidebar</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group">
+      <%= link_to "Overview", dashboard_index_path, class: "list-group-item" %>
+      <%= link_to "Events You Manage", owned_events_dashboard_index_path, class: "list-group-item" %>
+    </ul>
+  </div>
+</div>
