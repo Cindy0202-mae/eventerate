@@ -14,4 +14,8 @@ class EventPolicy < ApplicationPolicy
   def owned_events?
     user.present?
   end
+
+  def collaborated_events?
+    user.present?
+  end
 end

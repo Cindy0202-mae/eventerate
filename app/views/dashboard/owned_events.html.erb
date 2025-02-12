@@ -1,7 +1,11 @@
 <%= render 'dashboard/sidebar' %>
 
-<div class="container">
-  <% @owned_events.each do |event| %>
-    <%= event.title %>
-  <% end %>
-</div>
+<ul>
+  <div class="container">
+    <li>
+      <% @owned_events.each do |event| %>
+        <%= event.title %>
+      <% end %>
+    </li>
+  </div>
+</ul>

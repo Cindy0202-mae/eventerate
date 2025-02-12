@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   resources :dashboard, only: [:index] do
     collection do
       get :owned_events
+      get :collaborated_events
     end
   end
 end

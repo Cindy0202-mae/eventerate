@@ -12,4 +12,8 @@ class DashboardController < ApplicationController
   def owned_events
     authorize @owned_events = current_user.owned_events.order(date: :asc)
   end
+
+  def collaborated_events
+    authorize @collaborated_events = current_user.collaborated_events.order(date: :asc)
+  end
 end
