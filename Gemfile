@@ -56,6 +56,7 @@ gem "pundit"
 gem "faker"
 
 gem "ostruct"
+gem "simple_calendar"
 
 group :development, :test do
   gem "dotenv-rails"
