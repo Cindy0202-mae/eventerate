@@ -1,0 +1,13 @@
+<%# Manager %>
+<div class="col-4 text-center">
+  <p><strong>Manager:</strong></p>
+  <div class="d-flex flex-column text-center justify-content-center">
+    <div>
+      <% user = @event.user %>
+      <%= image_tag (user&.photo.attached? ? user.photo : "https://static-00.iconduck.com/assets.00/profile-default-icon-2048x2045-u3j7s5nj.png"), class: "avatar", alt: "collab-user" %>
+    </div>
+    <div class="text-center">
+      <p><small><%= "#{user&.first_name}"%></small></p>
+    </div>
+  </div>
+</div>

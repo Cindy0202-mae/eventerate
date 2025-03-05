@@ -11,29 +11,14 @@
       </div>
 
       <div class="d-flex head-right-side">
-        <%# Manager %>
-        <div class="col-4 text-center">
-          <p><strong>Manager:</strong></p>
-            <div class="d-flex flex-column text-center justify-content-center">
-              <div>
-                <% user = @event.user %>
-                <%= image_tag (user&.photo.attached? ? user.photo : "https://static-00.iconduck.com/assets.00/profile-default-icon-2048x2045-u3j7s5nj.png"), class: "avatar", alt: "collab-user" %>
-              </div>
-              <div class="text-center">
-                <p><small><%= "#{user&.first_name}"%></small></p>
-              </div>
-            </div>
-        </div>
-
+        <%= render "show_manager" %>
         <%= render "show_collaborators" %>
-
         <%# edit %>
         <div class="col-2">
           <%= link_to edit_event_path(@event) do %>
             <i class="fa-solid fa-pen-to-square edit-icon"></i>
           <% end %>
         </div>
-
       </div>
 
     </div>
