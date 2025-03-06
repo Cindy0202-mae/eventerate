@@ -148,6 +148,7 @@
 }
 
 
+
 // floating button
 .btn-gradient-oval {
   background: linear-gradient(135deg, #5170ff, #9e079b);
@@ -263,4 +264,8 @@
     color: #990000; // Even darker when clicked
     transform: scale(0.95); // Press effect
   }
+
+.task-activity-title {
+  font-size: 0.75em;
+
 }
