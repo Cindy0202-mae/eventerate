@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
-  database: eventerate_production
-  username: eventerate
-  password: <%= ENV["EVENTERATE_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
+  # database: eventerate_production
+  # username: eventerate
+  # password: <%= ENV["EVENTERATE_DATABASE_PASSWORD"] %>
